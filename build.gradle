@@ -27,3 +27,11 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+
+war {
+    baseName = 'Project-k'
+    version =  '1.0-SNAPSHOT'
+    manifest {
+        attributes 'Main-Class': 'HelloWorld'
+    }
+}
